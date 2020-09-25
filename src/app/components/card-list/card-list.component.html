@@ -1,0 +1,12 @@
+<div class="card">
+  <img class="card-img-top" src="http://lorempixel.com/318/180/" alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">{{ title }}</h4>
+    <p class="card-text">{{ description }}</p>
+    <div class="actions">
+      <span (click)="onEdit()" class="badge badge-default">Editar</span>
+      <span (click)="onArchived()" class="badge badge-primary">Arquivar</span>
+      <span (click)="onDelete()" class="badge badge-danger">Excluir</span>
+    </div>
+  </div>
+</div>

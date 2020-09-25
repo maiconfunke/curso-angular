@@ -1,0 +1,14 @@
+.card {
+  margin-top: 10px;
+  .card-block {
+    .actions {
+      float: right;
+      .badge {
+        font-weight: 400;
+        line-height: 1.6;
+        margin-left: 5px;
+        cursor: pointer;
+      }
+    }
+  }
+}
