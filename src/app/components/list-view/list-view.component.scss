@@ -1,0 +1,19 @@
+.jumbotron {
+  margin: 60px;
+  padding: 60px;
+  & .page-header {
+    margin-top: 40px;
+  }
+
+  & .breadcrumb {
+    padding-left: 2px;
+  }
+
+  & .form-check-input {
+    margin-left: -13px;
+  }
+
+  & .btn {
+    float: right;
+  }
+}

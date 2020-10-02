@@ -1,1 +1,33 @@
-<p>list-view works!</p>
+
+
+<div class="jumbotron">
+  <app-search [placeholder]="'Buscar listas...'"></app-search>
+  <div class="page-header">
+    <h1>Listas</h1>
+  </div>
+  <button type="button" class="btn btn-primary">Nova lista</button>
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Listas</a></li>
+    <li class="breadcrumb-item"><a href="#">Lista 1</a></li>
+    <li class="breadcrumb-item active">Nova lista</li>
+  </ol>
+
+  <div class="col-md-12">
+    <div class="form-group form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Mostrar listas arquivadas</label>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 col-12" *ngFor="let list of [1,2,3,4,5,6]">
+      <app-card-list
+      (onEditClicked)="onEdit()"
+      (onArchivedClicked)="onArchived()"
+      (onDeleteClicked)="onDelete()"
+      [title]="'Minha lsita'"
+      [description]="'bal bal'">
+    </app-card-list>
+    </div>
+  </div>
+</div>

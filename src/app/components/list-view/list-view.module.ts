@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ListViewComponent } from './list-view.component';
+import { SearchModule } from '../search/search.module';
+import { CardListModule } from '../card-list/card-list.module';
 
 
 
@@ -8,7 +10,9 @@ import { ListViewComponent } from './list-view.component';
   declarations: [ListViewComponent],
   exports: [ListViewComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    SearchModule,
+    CardListModule
   ]
 })
 export class ListViewModule { }
