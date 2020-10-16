@@ -1,0 +1,13 @@
+<h1>{{title}}</h1>
+<div class="form-group">
+  <label for="email">Título</label>
+  <input type="email" [(ngModel)]="item.title" class="form-control" id="email">
+</div>
+
+<div class="form-group">
+  <label for="pwd">Descrição</label>
+  <textarea class="form-control" [(ngModel)]="item.description"  rows="5"></textarea>
+</div>
+
+<button type="submit" class="btn btn-default" (click)="cancel()">Cancelar</button>
+<button type="submit" class="btn btn-success" (click)="save()">Salvar</button>
